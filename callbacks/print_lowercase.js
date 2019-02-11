@@ -3,8 +3,8 @@ var getHTML = require('./http-functions').getHTML;
 
 
 
-function printReverse (output){
-  console.log(output.split('').reverse().join(''));
+function printLowercase (output){
+  console.log(output.toLowerCase());
 }
 
 
@@ -17,5 +17,5 @@ function printReverse (output){
 
 
 
-getHTML(requestOptions,printReverse);
+getHTML(requestOptions,printLowercase);
 
