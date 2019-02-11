@@ -6,15 +6,15 @@ function getHTML (options, callback) {
         response.setEncoding('utf8');
         
         response.on('data', function (data) {
-            console.log(output+=data);
+            output+=data
           });
         response.on('end', function() {
             console.log('Response stream complete.');
+            callback(output);
           });
 
       });
     
-    callback(output);
     
   }
   
